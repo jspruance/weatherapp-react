@@ -1,14 +1,126 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image:url("./images/clouds_bg.jpg");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.navbar {
+  padding: .25rem .5rem;
+}
+
+.navbar-brand {
+  padding: .25rem 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+input {
+  min-width: 400px;
+  padding-left: 70px !important;
+  background-image: url('./images/mg1.png');
+  background-repeat: no-repeat;
+  background-position: left 10px top 50%;
+}
+
+.gray {
+  color: #ababab !important;
+}
+
+::placeholder {
+  color: #ababab !important;
+}
+
+input.invalid {
+  border-color: #dc3545;
+}
+
+div.invalid {
+  color: #dc3545;
+}
+
+.card {
+  width: 31%; /* 48% - 2 col, 31% - 3 col */
+  float: left;
+  min-height: 305px;
+  margin: 0 2% 2% 0;
+  border-radius: 8px;
+}
+
+.card .card-body {
+  padding-top: 1rem;
+}
+
+.card .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card h1 {
+  font-size: 3.8rem;
+  font-weight: 500;
+}
+
+.card h4 {
+  font-size: 2rem;
+}
+
+.card p {
+  font-size: 1.1rem; /* 1.2rem - 2 col, */
+  color: #ccc;
+}
+
+.card ul {
+  padding-left: 0;
+}
+
+.card ul li {
+  list-style-type: none;
+}
+
+.highlight { color: #05E177; }
+.highlight-secondary { color: #2D9DDD}
+
+.weather-icon {
+  width: 150px;
+  height: 150px;
+  background-image: url("./images/weathericons.png");
+  background-repeat: no-repeat;
+}
+
+.weather-icon.clearsky {
+  background-position: -300px -300px;
+}
+
+.weather-icon.snow, .weather-icon.lightrainandsnow {
+  background-position: -300px -150px;
+}
+
+.weather-icon.scatteredclouds, .weather-icon.brok-cloud {
+  background-position: -300px 0px;
+}
+
+.weather-icon.lightrain,
+.weather-icon.moderaterain,
+.weather-icon.lightintensityshowerrain,
+.weather-icon[class*="rain"]
+{
+  background-position: 0px -150px;
+}
+
+.weather-icon.showerrain {
+  background-position: -150px -150px;
+}
+
+.weather-icon.fog, .weather-icon.haze, .weather-icon.mist  {
+  background-position: -150px -450px;
+}
+
+.weather-icon.overcast clouds, .weather-icon.fewclouds {
+  background-position: -300px -0px;
+}
+.weather-icon.thunderstorm {
+  background-position: -450px -0px;
+}
+.weather-icon.noicon {
+  background-image: none;
 }
